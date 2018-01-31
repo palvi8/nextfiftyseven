@@ -18,14 +18,13 @@ margin: 0;
 }
 
 .banner{
-padding: 20% 0px;
-background: url("../images/headerpicture.jpg");
-background-image:cover;
-text-align:center;
+padding: 15% 0px;
+background: url("../images/coworking.png");
+background-size: cover;
+background-attachment: fixed;
 color:white;
 display:block;
-background-position:center;
- background-attachment: fixed;
+ 
 }
 .logo_width{
 width:10%;
@@ -49,8 +48,8 @@ canvas#spiders {
     z-index: 3;
 }
 .first_section_part{
- background: rgba(0,0,0,0.3);
- padding: 33px 11px;
+ background: rgba(0,0,0,0.6);
+ padding: 33px 0px;
 }
 .p_relative{
         position: absolute;
@@ -115,12 +114,12 @@ padding-bottom:49px;
 }
  .demo_button{
 display: inline-block;
-border: 2px solid #fff;
+border: 1px solid #fff;
 border-radius: 2px;
 text-transform: uppercase;
 text-decoration: none;
 padding: 11px 24px;
-font-size: 13px;
+font-size: 11px;
 color: #fff;
     }
 .banner_button_content{
@@ -203,6 +202,7 @@ padding-bottom:45px;
 }
 .centered{
     text-align:center;
+    z-index:999;
 }
 .give-feedback1{
 padding: 5px 15px;
@@ -309,7 +309,7 @@ padding-bottom:14px;
     padding-right: 22px;
 }
 .testimonials{
-background: url("../images/testimonialimage.jpg");
+background: url("../images/math.jpg");
 background-size: cover;
 background-attachment: fixed;
 padding-top: 60px;
@@ -363,6 +363,11 @@ padding-bottom:20px;
 .plans{
 
 }
+.plans_heading{
+    top:90%;
+    left:50%;
+    text-align:center;
+}
 .accordion {
   width: 80%;
   height: 350px;
@@ -397,7 +402,7 @@ padding-bottom:20px;
 
 .accordion ul li div a {
   display: block;
-  height: 350px;
+  height: 328px;
   width: 100%;
   position: relative;
   z-index: 3;
@@ -432,37 +437,41 @@ padding-bottom:20px;
   font-size: 32px;
   text-transform: uppercase;
   margin-bottom: 2px;
-  top: 160px;
+  top: 100px;
+  left:25%;
+  color:#555
 }
 
 .accordion ul li div a p {
-  top: 160px;
+  top: 120px;
   font-size: 18px;
   padding-left: 1em;
+  left:40%;
+  color:#555;
 }
 
 .accordion ul li:nth-child(1) { 
-  background-image: url("http://dev.fjwestcott.com/media/wysiwyg/home/home_ind_studio_portrait_photography_bob_harrington.jpg"); 
+  background-image: url("../images/privateoffice.jpg"); 
   background-position: 50% 30%;
 }
 
 .accordion ul li:nth-child(2) { 
-  background-image: url("http://dev.fjwestcott.com/media/wysiwyg/home/home_ind_cinema_flex_whale_wars_gavin_garrison.jpg"); 
+  background-image: url("../images/dedicateddesk.jpg"); 
  background-position: 70% 0%;
 }
 
 .accordion ul li:nth-child(3) { 
-  background-image: url("http://dev.fjwestcott.com/media/wysiwyg/home/home_ind_studio_portrait_photography_bob_harrington_bts.jpg"); 
+  background-image: url("../images/sharedoffice.jpg"); 
 background-position: 50% 50%;
 }
 
 .accordion ul li:nth-child(4) { 
-  background-image: url("http://dev.fjwestcott.com/media/wysiwyg/home/home_ind_travel_rapidbox.jpg"); 
+  background-image: url("../images/virtualoffice1.jpg"); 
   background-position: 30% 40%;
 }
 
 .accordion ul li:nth-child(5) { 
-  background-image: url("http://dev.fjwestcott.com/media/wysiwyg/home/home_ind_enthusiast_portrait_photography_little_studio_basics_lights.jpg"); 
+  background-image: url("../images/meeting.jpg"); 
   background-position: 60% 64%;
 }
 
@@ -509,11 +518,8 @@ background-position: 50% 50%;
   width: 100%;
   height: auto;
   transition: .5s ease;
-  backface-visibility: hidden;
 }
-.image:hover{
-    transform: scale(1.2);
-}
+
 .middle {
   transition: .5s ease;
   opacity: 0;
@@ -523,24 +529,121 @@ background-position: 50% 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   text-align: center;
+  z-index:999;
 }
 .location_container:hover .image {
-  opacity: 0.8;
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
 }
-
 .location_container:hover .middle {
   opacity: 1;
 }
-
+.centered{
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:white;
+    font-size: 19px;
+}
 .text {
-  background-color: #4CAF50;
-  color: white;
-  font-size: 16px;
-  padding: 16px 32px;
+color: white;
+border: 1px solid #fff;
+border-radius: 2px;
+text-transform: uppercase;
+margin-bottom:15px;
+
+}
+.visit{
+padding: 10px 52px;
+font-size: 11px;
+}
+.meeting{
+padding: 10px 20px;
+font-size: 11px;
+}
+.space{
+padding: 10px 45px;
+font-size: 11px;
+}
+.tab{
+    background: #fff;
+    border-radius: 8px;
+    text-align: center;
+    padding: 45px 11px 50px;
+    color: #555;
+    box-shadow: 0 0 10px rgba(0,0,0,.25);
+}
+.tab1 .icon {
+    background-position: left top;
+    background-size: cover;
+}
+.tab_head{
+font-size: 17px;
+    line-height: 26px;
+    color: #555;
+  padding: 20px 20px 0px 20px;
+    font-weight: 400;
+    margin: 0 0 11px;
+}
+.tab_para{
+    font-weight: 300;
+    font-size: 12px;
+     margin: 0px 12px;
+     color:darkgray;
+}
+    .footer{
+ border-top: 12px solid #fff; 
+ background-color:#f2f2f2
+}
+.footer_sec_title{
+font-size: 11px;
+line-height: 1.27273;
+font-weight: 600;
+letter-spacing: .005em;
+font-family: "SF Pro Text","Myriad Set Pro","SF Pro Icons","Apple Legacy Chevron","Helvetica Neue","Helvetica","Arial",sans-serif;
+
+}
+.footer_sec_item{
+color:#444;
+font-size: 11px;
+line-height: 1.27273;
+font-weight: 600;
+letter-spacing: .005em;
+text-decoration:none;
+font-family: "SF Pro Text","Myriad Set Pro","SF Pro Icons","Apple Legacy Chevron","Helvetica Neue","Helvetica","Arial",sans-serif;
+cursor:pointer;
+}
+.footer_sec_item:hover{
+    text-decoration:none;
+    color:#444;
+    opacity:0.8;
+}
+.moreways{
+padding-top:35px;
+color:#888;
+font-size: 11px;
+line-height: 1.27273;
+font-weight: 600;
+letter-spacing: .005em;
+text-decoration:none;
+font-family: "SF Pro Text","Myriad Set Pro","SF Pro Icons","Apple Legacy Chevron","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+.copyright{
+    border-top:1px solid lightgrey;
+    padding-top:15px;
+  color:#888;
+font-size: 11px;
+line-height: 1.27273;
+font-weight: 600;
+letter-spacing: .005em;
+text-decoration:none;
+font-family: "SF Pro Text","Myriad Set Pro","SF Pro Icons","Apple Legacy Chevron","Helvetica Neue","Helvetica","Arial",sans-serif
 }
 @media only screen and (max-device-width: 480px){
     .banner{
-padding:23% 0;
+    padding:23% 0;
     background: url(../images/headerpicture.jpg);
     background-image: cover;
     text-align: center;
