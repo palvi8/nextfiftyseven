@@ -6,7 +6,6 @@
             <link rel="stylesheet" href="css/bootstrap.min.css">
             <link rel="stylesheet" href="css/style.css">
             <link href="fonts/css/font-awesome.min.css" rel="stylesheet">
-            
     </head>
     <body>
         <nav class="navbar navbar-fixed-top navbar_fixed menu-shrink">
@@ -38,14 +37,14 @@
                        <div class="col-md-6 col-sm-6 col-xs-12 section_glass">
                            <div class="first_section_part">
                                <p style="color:white; font-size:18px;">Your Next Officespace</p>
-                       <p style="font-size: 20px;color:white">Connect | Communicate | Inspire | Create the future!</p>
+                       <p style="font-size: 20px;">Connect | Communicate | Inspire | Create the future!</p>
                                <br>
-                                <a class=" btn demo_button" style="margin:10px;color: #ffffff;border-color:white; ">
+                                <a class=" btn demo_button" style="margin:10px;color: #ffffff;border-color:white;" data-toggle="modal" data-target="#request_for_booking">
                                     <span class="button_text">
                                        Request For visit
                                     </span>
                                 </a>
-                                <a class=" btn demo_button" style="margin:10px;background-color: #44a1c2;border-color: #44a1c2;color: #ffffff;padding:12px 58px">
+                                <a class=" btn demo_button" style="margin:10px;background-color: #44a1c2;border-color: #44a1c2;color: #ffffff;padding:12px 58px" data-toggle="modal" data-target="#booking">
                                     <span class="button_text">
                                        Book now
                                     </span>
@@ -57,6 +56,7 @@
                </div>
            </div>
         </section>
+
         <section class="about">
             <div class="container">
                 <div class="row">
@@ -98,6 +98,41 @@
                     <div class="col-sm-6 col-md-4">
                         <div class="single_feature">
                             <div class="row">
+                                <div class="col-md-3"> <i class="fa fa-wifi icon" style="font-size:22px"></i></div>
+                                <div class=" col-md-9">
+                                    <h3>Super-fast Internet</h3>
+                                    <p>content content content content content content content content content content content content content content</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <div class="single_feature">
+                            <div class="row">
+                                <div class="col-md-3"> <i class=" fa fa-wifi icon" style="font-size:22px"></i></div>
+                                <div class=" col-md-9">
+                                    <h3>Excellent Location</h3>
+                                    <p>content content content content content content content content content content content content content content</p>
+                                </div>
+                            </div>
+                        </div>                        
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <div class="single_feature">
+                            <div class="row">
+                                <div class="col-md-3"> <i class="fa fa-wifi icon" style="font-size:24px"></i></div>
+                                <div class=" col-md-9">
+                                    <h3>Common Area</h3>
+                                    <p>content content content content content content content content content content content content content content</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6 col-md-4">
+                        <div class="single_feature">
+                            <div class="row">
                                 <div class="col-md-3"> <i class="fa fa-wifi icon" style="font-size:24px"></i></div>
                                 <div class=" col-md-9">
                                     <h3>Super-fast Internet</h3>
@@ -128,43 +163,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-md-4">
-                        <div class="single_feature">
-                            <div class="row">
-                                <div class="col-md-3"> <i class="fa fa-wifi icon" style="font-size:24px"></i></div>
-                                <div class=" col-md-9">
-                                    <h3>Free Refreshments</h3>
-                                    <p>content content content content content content content content content content content content content content</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4">
-                        <div class="single_feature">
-                            <div class="row">
-                                <div class="col-md-3"> <i class="fa fa-wifi icon" style="font-size:24px"></i></div>
-                                <div class=" col-md-9">
-                                    <h3>Meeting Rooms</h3>
-                                    <p>content content content content content content content content content content content content content content</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4">
-                        <div class="single_feature">
-                            <div class="row">
-                                <div class="col-md-3"> <i class="fa fa-wifi icon" style="font-size:24px"></i></div>
-                                <div class=" col-md-9">
-                                    <h3>Events</h3>
-                                    <p>content content content content content content content content content content content content content content</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                </div>                
             </div>
         </section>
-        <section class="location" style="margin:2% 0%">
+        <section class="location" style="margin:10% 0%">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 col-sm-12 col-xs-12">
@@ -178,7 +180,7 @@
                                 <div  class="image"></div>
                                 <div class="centered">location</div>
                                 <div class="middle">
-                                    <a class="btn text">
+                                    <a class="btn text" data-toggle="modal" data-target="#request_for_booking">
                                         <span class="visit">
                                               Request a visit
                                         </span>
@@ -203,7 +205,7 @@
                                 <div  class="image"></div>
                                 <div class="centered1">location</div>
                                 <div class="middle">
-                                    <a class="btn text">
+                                    <a class="btn text" data-toggle="modal" data-target="#request_for_booking">
                                         <span class="visit">
                                               Request a visit
                                         </span>
@@ -228,7 +230,7 @@
                                 <div  class="image"></div>
                                 <div class="centered2">location</div>
                                 <div class="middle">
-                                    <a class="btn text">
+                                    <a class="btn text" data-toggle="modal" data-target="#request_for_booking">
                                         <span class="visit">
                                               Request a visit
                                         </span>
@@ -255,64 +257,93 @@
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-md-6 col-sm-12 col-xs-12  dedicated_desk">
-                            <div class="middle">
-                                <h3 style="color:white">Dedicated Desk</h3>
-                                    <a class=" btn demo_button" style="margin:10px;background-color: #44a1c2;border-color: #44a1c2;color: #ffffff;padding:12px 58px">
+                            <div class="content">
+                                <div class="content-overlay"></div>
+                                <img class="content-image" src="images/dedicateddesk.jpg" >
+                                <div class="content-details fadeIn-bottom">
+                                <h3 class="content-title">DEDICATED DESK</h3>
+                                <p class="content-text">A desk of your own in a silent isolated space</p>
+                                <p class="content-text">12Hrs Access a day.</p>
+                                <p class="content-text">High-Speed Internet.</p>
+                                <p class="content-text">Recreational Zone.</p>
+                                <p class="content-text">Community support.</p>
+                                <p class="content-text">Access to untilities & cafeteria.</p>
+                                <p class="content-text">Dedicated seat.</p>
+                                <a href="new1.html"class=" btn demo_button" style="margin:10px;background-color: #44a1c2;border-color: #44a1c2;color: #ffffff;padding:12px 58px">
                                     <span class="button_text">
                                        Book now
                                     </span>
-                                    </a>
+                                </a>
+
                             </div>
+
+                        </div>
                         </div>
                         <div class="col-md-6 col-sm-12 col-xs-12 private_office">
-                            <div class="middle">
-                                <h3 style="color:white">Private Office</h3>
-                                    <a class=" btn demo_button" style="margin:10px;background-color: #44a1c2;border-color: #44a1c2;color: #ffffff;padding:12px 58px">
+                            <div class="content">
+                                <div class="content-overlay"></div>
+                                <img class="content-image" src="images/privateoffice.jpg">
+                                <div class="content-details fadeIn-bottom">
+                                <h3 class="content-title">PRIVATE OFFICE</h3>
+                                <p class="content-text">12hrs Access.</p>
+                                <p class="content-text">High-Speed Internet.</p>
+                                <p class="content-text">Unlimited Hot & Cold Beverages.</p>
+                                <p class="content-text">Meeting and Conference rooms.</p>
+                                <p class="content-text">Housekeeping.</p>
+                                <a class=" btn demo_button" style="margin:10px;background-color: #44a1c2;border-color: #44a1c2;color: #ffffff;padding:12px 58px">
                                     <span class="button_text">
                                        Book now
                                     </span>
-                                    </a>
+                                </a>
                             </div>
+
+                        </div>
                         </div>                       
                    </div>
-                    <div class="row">
-                        <center>
-                            <div class="col-md-6 col-sm-12 col-xs-12 shared_office" style="margin:0 24%">
-                                <div class="middle">
-                                <h3 style="color:white">Shared Office</h3>
-                                    <a class=" btn demo_button" style="margin:10px;background-color: #44a1c2;border-color: #44a1c2;color: #ffffff;padding:12px 58px">
-                                    <span class="button_text">
-                                       Book now
-                                    </span>
-                                    </a>
-                            </div>
-                            </div>
-                        </center>
-                    </div>
                     <div class="row">
                         <div class="col-md-6 col-sm-12 col-xs-12  shared_office">
-                            <div class="middle">
-                                <h3 style="color:white">Shared Office</h3>
-                                    <a class=" btn demo_button" style="margin:10px;background-color: #44a1c2;border-color: #44a1c2;color: #ffffff;padding:12px 58px">
+                            <div class="content">
+                                <div class="content-overlay"></div>
+                                <img class="content-image" src="images/meeting.jpg">
+                                <div class="content-details fadeIn-bottom">
+                                <h3 class="content-title">SHARED OFFICE</h3>
+                                <p class="content-text">A desk of your own in a shared open space at one location.</p>
+                                <p class="content-text">12Hrs Access a day.</p>
+                                <p class="content-text">High-Speed Internet.</p>
+                                <p class="content-text">Recreational Zone.</p>
+                                <p class="content-text">Community support.</p>
+                                <p class="content-text">Access to untilities & cafeteria.</p>
+                                <a class=" btn demo_button" style="margin:10px;background-color: #44a1c2;border-color: #44a1c2;color: #ffffff;padding:12px 58px">
                                     <span class="button_text">
                                        Book now
                                     </span>
-                                    </a>
+                                </a>
                             </div>
+
+                        </div>
                         </div>
                         <div class="col-md-6 col-sm-12 col-xs-12 virtual_office">
-                            <div class="middle">
-                                <h3 style="color:white">Virtual Office</h3>
-                                    <a class=" btn demo_button" style="margin:10px;background-color: #44a1c2;border-color: #44a1c2;color: #ffffff;padding:12px 58px">
+                            <div class="content">
+                                <div class="content-overlay"></div>
+                                <img class="content-image" src="images/virtualoffice1.jpg">
+                                <div class="content-details fadeIn-bottom">
+                                <h3 class="content-title">VIRTUAL OFFICE</h3>
+                                <p class="content-text">Communication address for your organisation.</p>
+                                <p class="content-text">Access to untilities & cafeteria.</p>
+                                <p class="content-text">Access to Meeting and Conference rooms.</p>
+                                <p class="content-text">Reception & Housekeeping.</p>
+                                <p class="content-text">Community & Networking Events.</p>
+                                <a class=" btn demo_button" style="margin:10px;background-color: #44a1c2;border-color: #44a1c2;color: #ffffff;padding:12px 58px">
                                     <span class="button_text">
                                        Book now
                                     </span>
-                                    </a>
-                            </div>    
-                        </div>                       
+                                </a>
+                            </div>
+                        </div>   
+                    </div>                          
                    </div>
                 </div>
-            
+
         </section>
         <section class="testimonial_section" >
             <div class="container">
@@ -377,13 +408,6 @@
                 </div>    
             </div>
         </section>
-        <section id="carousel">    				
-	<div class="container">
-		<div class="row">
-										
-		</div>
-	</div>
-</section>
         <footer class="footer_top" style="padding: 50px 0 40px;background-color: #f5f5f5;">
            <div class="container">
                <div class="row">
@@ -451,43 +475,136 @@
                 </div>
             </div>
         </section>
-       
-</body>    
-<script src="js/jquery.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script>
-    $(document).ready(function () {
-      $(window).scroll(function () {
+        <div class="modal fade" id="request_for_booking" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                       <h5 class="modal-title" id="exampleModalLabel">REQUEST FOR VISIT</h5>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="recipient-name" placeholder="Name">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="recipient-name" placeholder="Email">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="recipient-name" placeholder="Mobile">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Request</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="booking" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                       <h5 class="modal-title" id="exampleModalLabel">BOOK NOW</h5>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="recipient-name" placeholder="Name">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="recipient-name" placeholder="Email">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="recipient-name" placeholder="Mobile">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" id="booking_proceed" class="btn btn-primary" data-toggle="modal" data-target="#booking_next_step">Proceed</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+                <div class="modal fade" id="booking_next_step" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                       <h5 class="modal-title" id="exampleModalLabel">BOOK NOW</h5>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group" type="text">
+                                <select class="form-control ok">
+                                    <option selected="selected" >city</option>
+                                    <option class="" value="city1">City1</option>
+                                    <option class="" value="city2">City2</option>
+                                    <option class="" value="city3">City3</option>
+                                    <option class="" value="city4">City4</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" id="city" class="form-control" id="recipient-name" placeholder="place">
+                            </div>
+                            <div class="form-group">
+                                <select class="form-control">
+                                    <option selected="selected" >city</option>
+                                    <option  value="city1">Dedicated Desk</option>
+                                    <option  value="city2">Meeting Room</option>
+                                    <option  value="city3">Hot Desk</option>
+                                    <option  value="city4">Virtual Office</option>
+                                </select>      
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Proceed</button>
+                    </div>
+                </div>
+            </div>
+        </div>        
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script>
+        $(document).ready(function () {
+        $(window).scroll(function () {
         if ($(document).scrollTop() > 100) {
-          $(".navbar_fixed").css({"background-color": "#fff","transition":"all 0.5s ease","-webkit-animation:":"600ms ease-in-out 0s normal none 1 running fadeInDown","animation":"600ms ease-in-out 0s normal none 1 running fadeInDown","box-shadow":"0 1px 5px rgba(50, 50, 50, 0.4)"} );
+          $(".navbar_fixed").css({"background-color": "#fff","transition":"all 0.5s ease","box-shadow":"0 1px 5px rgba(50, 50, 50, 0.4)"} );
         } else {
-          $(".navbar_fixed").css({"background-color": "transparent","transition":"all 0.5s ease"});
+          $(".navbar_fixed").css({"background-color": "transparent"});
         }
-      });
-    });
-$(document).ready(function(){
-    $(".location_container").mouseenter(function(){
+        });
+        });
+        $(document).ready(function(){
+        $(".location_container").mouseenter(function(){
          $('.centered').css({"top":"7%","transition":"0.5s"});  
-    });
-    $(".location_container").mouseleave(function(){
-     $('.centered').css({"top":"90%","transition":"0.5s"});
+        });
+        $(".location_container").mouseleave(function(){
+        $('.centered').css({"top":"90%","transition":"0.5s"});
      
-    });
-    $(".location_container1").mouseenter(function(){
+        });
+        $(".location_container1").mouseenter(function(){
          $('.centered1').css({"top":"7%","transition":"0.5s"});  
-    });
-    $(".location_container1").mouseleave(function(){
-     $('.centered1').css({"top":"90%","transition":"0.5s"});
+        });
+        $(".location_container1").mouseleave(function(){
+        $('.centered1').css({"top":"90%","transition":"0.5s"});
      
-    });
-    $(".location_container2").mouseenter(function(){
+        });
+        $(".location_container2").mouseenter(function(){
          $('.centered2').css({"top":"7%","transition":"0.5s"});  
-    });
-    $(".location_container2").mouseleave(function(){
-     $('.centered2').css({"top":"90%","transition":"0.5s"});
-     
-    });
+        });
+        $(".location_container2").mouseleave(function(){
+        $('.centered2').css({"top":"90%","transition":"0.5s"});
+        });
+        });
+        $("#booking_proceed").on('click',function(){
+         $('#booking').modal('hide')
+        });
+         $('.ok').change(function() {
+    $('#city').val($(this).val());
 });
-</script>
-</body>
+       </script>
+    </body>
 </html>
