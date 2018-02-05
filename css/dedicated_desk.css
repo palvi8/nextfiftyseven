@@ -85,3 +85,100 @@ Licensed under MIT
   border-bottom: 1px solid #eee;
   padding-bottom: 15px;
 }
+.maxl{
+  margin:25px ;
+}
+.inline{
+  display: inline-block;
+}
+.inline + .inline{
+  margin-left:70px;
+}
+.radio{
+  color:#999;
+  font-size:15px;
+  position:relative;
+}
+.radio span{
+  position:relative;
+   padding-left:20px;
+}
+.radio span:after{
+  content:'';
+  width:15px;
+  height:15px;
+  border:3px solid;
+  position:absolute;
+  left:0;
+  top:1px;
+  border-radius:100%;
+  -ms-border-radius:100%;
+  -moz-border-radius:100%;
+  -webkit-border-radius:100%;
+  box-sizing:border-box;
+  -ms-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+}
+.radio input[type="radio"]{
+   cursor: pointer; 
+  position:absolute;
+  width:100%;
+  height:100%;
+  z-index: 1;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"
+}
+.radio input[type="radio"]:checked + span{
+  color:#337ab7;  
+}
+.radio input[type="radio"]:checked + span:before{
+    content:'';
+  width:5px;
+  height:5px;
+  position:absolute;
+  background:#337ab7;
+  left:5px;
+  top:6px;
+  border-radius:100%;
+  -ms-border-radius:100%;
+  -moz-border-radius:100%;
+  -webkit-border-radius:100%;
+}
+.arrow_right_icon{
+background: transparent;
+padding: 11px 13px 13px 14px;
+border: 3px solid #337ab7;
+border-radius: 50%;
+font-size: 18px;
+color:#337ab7
+}
+.upload_button{
+background: transparent;
+padding: 8px 15px;
+border: 1px solid #337ab7;
+border-left-radius: 10px;
+border-radius: 15px 15px 15px 15px;
+color: #337ab7;
+font-weight: bold;
+}
+  .upload_button:hover{
+   text-decoration: none;
+   color:white;
+   background: #337ab7;
+   cursor: pointer;
+ }
+  .signup_modal_head{
+padding-bottom: 14px;
+font-size: 24px;
+margin-top: 20px;
+border-bottom: 1px solid grey;
+  }
+.signup_modal_para{
+margin-bottom: 20px;
+}
+.signup_modal_detail_head{
+font-size: 18px;
+margin: 17px 0px 10px 0px;
+}
