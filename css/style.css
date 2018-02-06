@@ -167,6 +167,9 @@ letter-spacing: 1px;
 margin: 0;
     padding-top: 0px;
 }
+.blue{
+    color:#337ab7
+}
 .navbar {
     position: relative;
     min-height: 30px;
@@ -839,6 +842,9 @@ background-color: #337ab7;
 }
 .mb_head{
 display:none
+}
+.desk_head{
+    margin-top: 5%;
 }
 @media screen and (max-width: 768px){
 .modal_width{
