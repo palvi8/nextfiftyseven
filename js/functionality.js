@@ -27,10 +27,6 @@
          $('.ok').change(function() {
     $('#city').val($(this).val());
 });
-
-          $( function() {
-          $( "#datepicker" ).datepicker();
-          } );
 $( document ).ready(function() {
     $('.btn-number').click(function(e){
         e.preventDefault();
@@ -108,16 +104,6 @@ $( document ).ready(function() {
             }
     });
 });
-
-var myEl = document.getElementById('dedicated_button');
-myEl.addEventListener('click', function() {
-    console.log("working");
-   window.location.href = "dedicated_desk.html?id=test";
-});
- function myfunction(){
-$('#tab_default_1').addClass('active');
-console.log("dedicated");
- }
 
  var myEl = document.getElementById('dedicated_button');
 myEl.addEventListener('click', function() {

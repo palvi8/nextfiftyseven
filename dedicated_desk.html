@@ -103,19 +103,19 @@
                         			<div class="tabbable-panel">
 				<div class="tabbable-line">
 					<ul id="mytabs" class="nav nav-tabs ">
-						<li class="active">
+						<li id="first">
 							<a href="#tab_default_1" data-toggle="tab">
 							Dedicated Desk </a>
 						</li>
-						<li>
+						<li id="second">
 							<a href="#tab_default_2" data-toggle="tab">
 							Private Office </a>
 						</li>
-						<li>
+						<li id="third">
 							<a href="#tab_default_3" data-toggle="tab">
 							Shared Office </a>
                         </li>
-                        <li>
+                        <li id="fourth">
 							<a href="#tab_default_4" data-toggle="tab">
 							Virtual Office </a>
 						</li>
@@ -138,9 +138,9 @@
                                         <div class="form-group" type="text">
                                             <select class="form-control ok">
                                                     <option selected="selected" >Select Type</option>
-                                                    <option class="" value="city1">Day Pass</option>
-                                                    <option class="" value="city2">Weekly Pass</option>
-                                                    <option class="" value="city3">Monthly Pass</option>
+                                                    <option class="" value="Day Pass">Day Pass</option>
+                                                    <option class="" value="Weekly Pass">Weekly Pass</option>
+                                                    <option class="" value="Monthly Pass">Monthly Pass</option>
                                             </select>
                                         </div>
                                     </div>
@@ -614,27 +614,27 @@
                                 </div>
                             </div>
                             <div class="col-md-7">
-                        <h4 class="signup_modal_head">
-                           Sign-Up Hot Desking
-                        </h4>
-                        <p class="signup_modal_para">Check the details and proceed</p>
-                        <form style="margin-right:17%">
-                            <div class="form-group">
-                                <input type="text" class="form-control" id="recipient-name" placeholder="Name">
+                                <h4 class="signup_modal_head">
+                                    Sign-Up Hot Desking
+                                </h4>
+                                <p class="signup_modal_para">Check the details and proceed</p>
+                                <form style="margin-right:17%">
+                                    <div class="form-group">
+                                            <input type="text" class="form-control" id="recipient-name" placeholder="Name">
+                                    </div>
+                                    <div class="form-group">
+                                            <input type="text" class="form-control" id="recipient-name" placeholder="Email">
+                                    </div>
+                                    <div class="form-group">
+                                            <input type="text" class="form-control" id="recipient-name" placeholder="Mobile">
+                                    </div>
+                                </form>
                             </div>
-                            <div class="form-group">
-                                <input type="text" class="form-control" id="recipient-name" placeholder="Email">
-                            </div>
-                            <div class="form-group">
-                                <input type="text" class="form-control" id="recipient-name" placeholder="Mobile">
-                            </div>
-                        </form>
-                        </div>
                         </div>
                     </div>
                     <div class="modal-footer">
                         <center>
-                            <a class=" btn demo_button" style="margin:10px;background-color: #44a1c2;border-color: #44a1c2;color: #ffffff;padding:12px 58px" data-toggle="modal" data-target="#booking">
+                            <a class=" btn demo_button" style="margin:10px;background-color: #44a1c2;border-color: #44a1c2;color: #ffffff;padding:12px 58px">
                                 <span class="button_text">
                                           Proceed 
                                 </span>
@@ -655,10 +655,7 @@
           $(".nav_item").css("color","#000");
         });
 
-        $("#click_button").hide();
-       
-        
-        
+        $("#click_button").hide();       
 </script>
 <script>
     var url= window.location.href;
@@ -667,21 +664,26 @@
     if(id=="dedicated_desk"){
      window.onload = function(){
     document.getElementById('click_button').click();
+    $("#first").addClass("active");
      }
+     
     }
 else if( id=="private_desk"){
       window.onload = function(){
     document.getElementById('private_button').click();
+    $("#second").addClass("active");
 }
 }
 else if(id=="shared"){
 window.onload = function(){
     document.getElementById('shared_button').click();
+    $("#third").addClass("active");
 }
 }
 else{
 window.onload = function(){
     document.getElementById('virtual_button').click();
+    $("#fourth").addClass("active");
 }
 }
 
