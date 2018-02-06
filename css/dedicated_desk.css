@@ -1,3 +1,6 @@
+.dedicated_first_section{
+margin-top: 5%
+}
 /***
 Bootstrap Line Tabs by @keenthemes
 A component of Metronic Theme - #1 Selling Bootstrap 3 Admin Theme in Themeforest: http://j.mp/metronictheme
@@ -181,4 +184,12 @@ margin-bottom: 20px;
 .signup_modal_detail_head{
 font-size: 18px;
 margin: 17px 0px 10px 0px;
+}
+.documents{
+  padding: 20px 10px;background: #f4f4f4; margin: 0px auto;
+}
+@media screen and (max-width: 480px){
+  .dedicated_first_section{
+margin-top: 17%
+}
 }

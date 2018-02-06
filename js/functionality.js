@@ -21,9 +21,7 @@
         $('.centered2').css({"top":"90%","transition":"0.5s"});
         });
         });
-        $("#booking_proceed").on('click',function(){
-         $('#booking').modal('hide')
-        });
+
          $('.ok').change(function() {
     $('#city').val($(this).val());
 });

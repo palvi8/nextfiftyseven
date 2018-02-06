@@ -31,10 +31,10 @@
                 </div>
             </div>
         </nav>
-        <section style="margin-top: 5%;">
+        <section class="dedicated_first_section">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-5">
+                    <div class="col-md-5 sm-12">
                             <div class="col-md-12">
                                 <img src="images/dedicateddesk.jpg" style="width:100%" class="img-responsive">
                             </div>
@@ -75,7 +75,6 @@
                                    <p>Answers</p>
                                 </div>
                             </div>
-                        
                     </div>
                     <div class="col-md-7">
                         <div class="col-md-12" style="padding: 16px 0px;">
@@ -350,55 +349,83 @@
                                     <p>Lets figure out the plan that suits you</p>
                                 </div>
                                 <div>
-                                   <div class="maxl">
+                                   <div class="row maxl">
+                                       <div class="col-md-6 col-sm-6">
                                         <label class="radio inline"> 
                                             <input type="radio" name="virtual_office_plan" value="Company" checked>
                                             <span> Company </span> 
                                         </label>
+                                        </div>
+                                        <div class="col-md-6 col-sm-6">
                                         <label class="radio inline"> 
                                             <input type="radio" name="virtual_office_plan" value="Individual">
                                             <span>Individual </span> 
                                         </label>
+                                        </div>
                                     </div>                                    
                                 </div>
                                 <div>
                                 <div style="margin-bottom:10px">
                                     <h5>PAN Card</h5>
                                 </div>
-                                <div style="display: inline-flex;margin: 2px 0px;background: #f4f4f4;padding: 20px 16px;">
-                                     <span><i class="fa fa-arrow-right arrow_right_icon"></i></span>
-                                     <span style="margin:0px 140px"><h4>Your file here</h4></span>
-                                     <span style="margin: 11px;"><a class="upload_button">upload</a></span>
+                                <div class="row documents">
+                                    <div class="col-md-4 col-sm-4">
+                                        <span><i class="fa fa-arrow-right arrow_right_icon"></i></span>
+                                    </div>
+                                    <div class="col-md-4 col-sm-4">
+                                         <span><h4>Your file here</h4></span>
+                                    </div>
+                                    <div class="col-md-4 col-sm-4">
+                                        <span style=""><a class="upload_button">upload</a></span>
+                                    </div>
                                 </div>
                                 </div>
                                 <div>
                                 <div style="margin-bottom:10px">
                                     <h5>Company Identification Number Document</h5>
                                 </div>
-                                <div style="display: inline-flex;margin: 2px 0px;background: #f4f4f4;padding: 20px 16px;">
-                                     <span><i class="fa fa-arrow-right arrow_right_icon"></i></span>
-                                     <span style="margin:0px 140px"><h4>Your file here</h4></span>
-                                     <span style="margin: 11px;"><a class="upload_button">upload</a></span>
+                                <div class="row documents">
+                                    <div class="col-md-4 col-sm-4">
+                                        <span><i class="fa fa-arrow-right arrow_right_icon"></i></span>
+                                    </div>
+                                    <div class="col-md-4 col-sm-4">
+                                         <span><h4>Your file here</h4></span>
+                                    </div>
+                                    <div class="col-md-4 col-sm-4">
+                                        <span style=""><a class="upload_button">upload</a></span>
+                                    </div>
                                 </div>
                                 </div>  
                                 <div>
                                 <div style="margin-bottom:10px">
                                     <h5>Company Registration Address proof</h5>
                                 </div>
-                                <div style="display: inline-flex;margin: 2px 0px;background: #f4f4f4;padding: 20px 16px;">
-                                     <span><i class="fa fa-arrow-right arrow_right_icon"></i></span>
-                                     <span style="margin:0px 140px"><h4>Your file here</h4></span>
-                                     <span style="margin: 11px;"><a class="upload_button">upload</a></span>
+                                <div class="row documents">
+                                    <div class="col-md-4 col-sm-4">
+                                        <span><i class="fa fa-arrow-right arrow_right_icon"></i></span>
+                                    </div>
+                                    <div class="col-md-4 col-sm-4">
+                                         <span><h4>Your file here</h4></span>
+                                    </div>
+                                    <div class="col-md-4 col-sm-4">
+                                        <span style=""><a class="upload_button">upload</a></span>
+                                    </div>
                                 </div>
                                 </div>
                                 <div>
                                 <div style="margin-bottom:10px">
                                     <h5>GST Information</h5>
                                 </div>
-                                <div style="display: inline-flex;margin: 2px 0px;background: #f4f4f4;padding: 20px 16px;">
-                                     <span><i class="fa fa-arrow-right arrow_right_icon"></i></span>
-                                     <span style="margin:0px 140px"><h4>Your file here</h4></span>
-                                     <span style="margin: 11px;"><a class="upload_button">upload</a></span>
+                                <div class="row documents">
+                                    <div class="col-md-4 col-sm-4">
+                                        <span><i class="fa fa-arrow-right arrow_right_icon"></i></span>
+                                    </div>
+                                    <div class="col-md-4 col-sm-4">
+                                         <span><h4>Your file here</h4></span>
+                                    </div>
+                                    <div class="col-md-4 col-sm-4">
+                                        <span style=""><a class="upload_button">upload</a></span>
+                                    </div>
                                 </div>
                                 </div>  
                                 <div style="margin: 20px 0px">
@@ -651,8 +678,8 @@
         <script>
             
  $(document).ready(function () {
-          $(".navbar_fixed").css({"background-color": "#fff","transition":"all 0.5s ease","box-shadow":"0 1px 5px rgba(50, 50, 50, 0.4)"} ); 
-          $(".nav_item").css("color","#000");
+          $(".navbar_fixed").css({"background-color": "rgba(0,0,0,0.7)","transition":"all 0.5s ease","box-shadow":"0 1px 5px rgba(50, 50, 50, 0.4)"} ); 
+          $(".nav_item").css("color","white");
         });
 
         $("#click_button").hide();       
