@@ -112,7 +112,6 @@ myEl.addEventListener('click', function() {
 $('#tab_default_1').addClass('active');
 console.log("dedicated");
  }
-
  var myEll = document.getElementById('private_office');
 myEll.addEventListener('click', function() {
     console.log("working2");
@@ -141,3 +140,32 @@ myvirtual.addEventListener('click', function() {
 $('#tab_default_4').addClass('active');
 console.log("virtual");
  }
+ /*function myFunction(){
+     var select = document.getElementById("mySelect").value;
+     $("#booking_proceed").click(function(){
+        if(select == 'Dedicated Desk'){
+            window.location.href = "dedicated_desk.html?id=dedicated_desk";
+            console.log(select);
+        }
+        
+     });
+ }*/
+function myFunction(){
+        var select = document.getElementById("mySelect").value;
+        if(select == "Dedicated Desk"){
+           window.location.href = "dedicated_desk.html?id=dedicated_desk";
+        }
+        else if(select == "Private Office"){
+            window.location.href = "dedicated_desk.html?id=private_desk";
+        }
+        else if(select == "Shared Office"){
+             window.location.href = "dedicated_desk.html?id=shared";
+        }
+        else if(select == "Virtual Office"){
+             window.location.href = "dedicated_desk.html?id=virtual";
+        }
+        else{
+            console.log("new page");
+        }
+}
+ 

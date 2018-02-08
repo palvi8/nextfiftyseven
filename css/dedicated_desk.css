@@ -196,3 +196,20 @@ margin-top: 17%
 .privacy_head{
 margin:15px auto;
 }
+.doc_form{
+display:none;
+}
+.faq{
+margin-bottom: 7px; 
+line-height:20px;
+font-family: "Lato",sans-serif;
+color:#323232;
+font-weight: 600;
+}
+.faq_sec_content{
+font-family: "Lato",sans-serif;
+font-style: normal;
+font-weight: 400;
+color: grey;
+font-size:15px;
+}

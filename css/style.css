@@ -217,7 +217,7 @@ font-size: 15px;
     border: 1px solid darkgrey !important;
 }
 .banner{
-padding: 15% 0px;
+padding: 19% 0px;
 background: url("../images/coworking.png");
 background-size: cover;
 background-attachment: fixed;
@@ -232,6 +232,8 @@ width:100px;
 }
 .features_section{
     margin:5% 0%;
+    padding: 3% 0%;
+    background-color: #eee;
 }
 .banner_section{
 overflow: hidden;
@@ -256,7 +258,13 @@ padding: 11px 24px;
 font-size: 11px;
 color: #fff;
     }
-
+.blue_button{
+    margin:10px;
+    background-color: #44a1c2;
+    border-color: #44a1c2;
+    color: #ffffff;
+    padding:12px 58px;
+}
 .about-text {
     padding-left: 15px;
 }
@@ -266,20 +274,33 @@ color: #fff;
     position: relative;
     padding-bottom: 15px;
 }
-
+.about_sec_content{
+font-family: "Lato",sans-serif;
+font-style: normal;
+font-weight: 400;
+color: hsl(24,3%,28%);
+font-size:15px;
+}
 .section_title{
 text-align: center;
 margin-bottom: 80px
 }
-.icon{
-    font-size: 30px;
-    margin-top: 25px;
-    padding: 25px;
-    background: #333;
-    color: white;
-    border-radius: 50px;
+.section_title_feature{
+    text-align: center;
+    margin-bottom: 39px;
 }
-
+.feature_icon:hover{
+-moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  cursor:pointer;
+}
+.coworking_feature{
+    background: rgba(221,221,221,0.88);
+    padding-top: 22px;
+    margin: 18px auto;
+    padding-bottom: 21px;
+}
 .about{
     padding:13px 0px;
 }
@@ -549,7 +570,7 @@ padding: 60px 0 83px;
   width: 100%;
   font-size: 0;
   height: 20px;
-  bottom: 15px;
+  bottom: 10px;
   padding: 0 5px;
   cursor: e-resize;
   overflow-x: auto;
@@ -567,7 +588,7 @@ padding: 60px 0 83px;
   margin: 2px 3px;
   cursor: pointer;
   display: inline-block;
-  background: #337ab7;
+  background: grey;
   -webkit-border-radius: 100%;
   border-radius: 100%;
 }
@@ -648,7 +669,6 @@ padding: 60px 0 83px;
   font-weight: 600;
   position: relative;
   letter-spacing: 1px;
-  text-transform: uppercase;
 }
 
 .testimonial4_slide{
@@ -658,7 +678,7 @@ padding: 60px 0 83px;
   bottom: 0;
   width: 70%;
   margin: auto;
-  padding: 20px;
+  padding: 25px 25px 25px 30px;
   position: relative;
   text-align: center;
 }
@@ -679,13 +699,14 @@ padding: 60px 0 83px;
 
 .testimonial4_slide p {
   color: #323232;
-  font-size: 16px;
+  font-size: 13px;
   margin: 40px 0 20px 0;
+  font-family: "Lato",sans-serif; 
 }
 
-.testimonial4_slide h4 {
+.testimonial4_slide h5 {
   color: #323232;
-  font-size: 24px;
+  font-size: 18px;
   font-weight: bold;
 }
 
@@ -846,10 +867,22 @@ display:none
 .desk_head{
     margin-top: 5%;
 }
-@media screen and (max-width: 768px){
+.spacing{
+left: 18px;
+margin-bottom: 12px;
+}
 .modal_width{
     width:434px;
 }
+.footer_sec_content{
+        font-family: "Lato",sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    color: hsl(24,3%,28%);
+    font-size: 13px;
+}
+@media screen and (max-width: 768px){
+
 .location_container:hover .middle {
     opacity: 1;
     margin-top: 24px;
@@ -874,26 +907,36 @@ display:none
     padding: 10px 25px;
     font-size: 8px;
 }
-}
-@media screen and (max-width: 480px){
-    .location{
-        margin:20px;
-    }
-    .mb{
-        margin-bottom: 27px;
-    }
-    .modal_width {
-       width: auto;
-    }
     .mb_head{
        display:block;
     }
     .desk_head{
        display:none;
     }
+}
+@media screen and (max-width: 480px){
+    .location{
+        margin:20px;
+    }
+    .mb{
+        margin-bottom: 13px;
+    }
+    .modal_width {
+       width: auto;
+    }
     .section_glass {
-    margin: 37% 15%;
-    width: 76%;
+      margin: 37% 15%;
+      width: 76%;
+    }
+    .spacing{
+      left:0px;
+    }
+    .about_sec_content {
+    font-family: "Lato",sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    color: hsl(24,3%,28%);
+    font-size: 13px;
 }
 }
 .content {
@@ -937,7 +980,6 @@ width: 100%;
   -moz-transition: all 0.3s ease-in-out 0s;
   transition: all 0.3s ease-in-out 0s;
 }
-
 .content:hover .content-details{
   top: 50%;
   left: 50%;
