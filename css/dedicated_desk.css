@@ -195,6 +195,8 @@ margin-top: 17%
 }
 .privacy_head{
 margin:15px auto;
+    border-bottom: 2px solid grey;
+    margin-bottom: 10px;
 }
 .doc_form{
 display:none;

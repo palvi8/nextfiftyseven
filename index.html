@@ -5,7 +5,10 @@
             <meta name="viewport" content="width=device-width, initial-scale=1.0, offset=true">
             <link rel="stylesheet" href="css/bootstrap.min.css">
             <link rel="stylesheet" href="css/style.css">
+             <link rel="stylesheet" href="css/feature.css">
             <link href="fonts/css/font-awesome.min.css" rel="stylesheet">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.3/css/bootstrapValidator.css"/>
+            
     </head>
     <body data-spy="scroll" data-target="navbar" data-offset="100">
         <nav class="navbar navbar-fixed-top navbar_fixed menu-shrink">
@@ -36,10 +39,10 @@
                    <center>
                        <div class="col-md-6 col-sm-6 col-xs-12 section_glass">
                            <div class="first_section_part">
-                               <p style="color:white; font-size:18px;">Your Next Officespace</p>
+                               <p style="color:white; font-size:26px;">Your Next Officespace</p>
                                <p style="font-size: 20px;">Connect | Communicate | Inspire | Create the future!</p>
                                <br>
-                                <a class=" btn demo_button" style="margin:10px;color: #ffffff;border-color:white;" data-toggle="modal" data-target="#request_for_booking">
+                                <a class=" btn demo_button request_button" data-toggle="modal" data-target="#request_for_booking">
                                     <span class="button_text">
                                        Request For visit
                                     </span>
@@ -63,8 +66,8 @@
                     <div class="col-md-3 sm-12 sx-12 "></div>
                      <div class="col-md-6 col-sm-12 col-xs-12">
                         <center><div class="section_title">
-                            <h3>About Us</h3>
-                            <p class="about_sec_content">Our workspace design features private offices to maintain privacy without sacrificing transparency or natural light. Common spaces have a distinct aesthetic and vibe that will inspire your team.</p>
+                            <h2>About Us</h2>
+                            <p class="about_sec_content">Our workspace design features private offices to maintain privacy without sacrificing transparency or natural light.
                         </div></center>
                     </div>
                     <div class="col-md-3 sm-12 xs-12"></div>
@@ -86,7 +89,6 @@
                         <div class="about-text">
                             <h4>Community</h4>
                             <p class="about_sec_content">Community is our catalyst, we believe it’s really importance walk together with like minded people to grow. Our mission doesn’t end with the small businesses and entrepreneurs that call us home. We believe in empowering our team to create their own life’s work. We move fast and we challenge each other, but we look after each other and care about our culture, which makes working here extremely rewarding.</p>
-                            <p class="about_sec_content">Connect to like-minded people through events, community hours and our network.Arnav Vohra, Mobiapp</p>
                         </div>
                     </div>
                     <div class="col-md-6">
@@ -101,7 +103,6 @@
                         <div class="about-text">
                             <h3>Community</h3>
                             <p class="about_sec_content">Community is our catalyst, we believe it’s really importance walk together with like minded people to grow. Our mission doesn’t end with the small businesses and entrepreneurs that call us home. We believe in empowering our team to create their own life’s work. We move fast and we challenge each other, but we look after each other and care about our culture, which makes working here extremely rewarding.</p>
-                            <p class="about_sec_content">Connect to like-minded people through events, community hours and our network.Arnav Vohra, Mobiapp</p>
                         </div>
                     </div>
                 </div>
@@ -263,11 +264,10 @@
                             </div>
                         </center>
                     </div>
-                    
-                       
                 </div>               
             </div>
         </section>
+
         <section id="plans" class="plans" style="margin-bottom:0%">
                 <div class="container">
                 <div class="row">
@@ -435,8 +435,8 @@
                            <ul class="account_list">
                                <li><i class="fa fa-angle-double-right"></i> <a>About Us</a></li>
                                 <li><i class="fa fa-angle-double-right"></i> <a>Locations</a></li>
-                                 <li><i class="fa fa-angle-double-right"></i> <a>Spaces</a></li>
-                                  <li><i class="fa fa-angle-double-right"></i> <a>Privacy Policy</a></li>
+                                <li><i class="fa fa-angle-double-right"></i> <a>Spaces</a></li>
+                                <li><i class="fa fa-angle-double-right"></i> <a data-toggle="modal" data-target="#terms_policy">Privacy Policy</a></li>
                            </ul>
                        </div>
                    </div>
@@ -481,21 +481,21 @@
                             <p>Share your details below</p>
                             <p>We promise to get back to you soon</p>
                         </div>
-                        <form>
+                        <form class="registerForm">
                             <div class="form-group">
-                                <input type="text" class="form-control" id="recipient-name" placeholder="Name">
+                                <input type="text" id ="input_name" class="form-control" placeholder="Name" name="username">
                             </div>
                             <div class="form-group">
-                                <input type="text" class="form-control" id="recipient-name" placeholder="Email">
+                                <input type="text" id="input_email" class="form-control" placeholder="Email" name="email">
                             </div>
                             <div class="form-group" style="display: inline-table">
                                 <span class="input-group-addon">+91</span>
-                                <input type="text" class="form-control" id="recipient-name" placeholder="Mobile">
+                                <input type="text" id="input_phone" class="form-control" id="request_phone_number" placeholder="Mobile"  maxlength="10" name="phone">
                             </div>
                         </form>
                     </div>
                     <div class="modal-footer" style="background:#eee">
-                        <center><button type="button" class="btn btn-primary">Request</button></center>
+                        <center><button type="button" id="req_button" class="btn btn-primary">Request</button></center>
                     </div>
                 </div>
             </div>
@@ -522,7 +522,7 @@
                             </div>
                             <div class="form-group" style="display: inline-table">
                                 <span class="input-group-addon">+91</span>
-                                <input type="text" class="form-control" id="recipient-name" placeholder="Mobile">
+                                <input type="text" class="form-control" id="phone_number" placeholder="Mobile" maxlength="10">
                             </div>
                         </form>
                     </div>
@@ -575,8 +575,69 @@
                 </div>
             </div>
         </div>
+                <div class="modal fade" id="terms_policy" role="dialog">
+            <div class="modal-dialog modal-lg">
+                <!-- Modal content-->
+                <div class="modal-content box_size"> 
+                    <div class="modal-body" style="overflow-y: auto; max-height: calc(100vh - 210px);margin: 0px 0px 0px 16px;">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="privacy_head">
+                                <h4>Privacy Policy</h4>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <p>Welcome to Next57.com</p>
+                                <p>We understand that privacy online is important to users of our Site, especially when conducting business.</p>
+                                <p>This statement governs our privacy policies with respect to those users of the Site (“Visitors”) who visit without transacting business and Visitors who register to transact business on the Site and make use of the various services offered by Next57.com (collectively, “Services”) (“Authorized Customers”).</p>
+                                <h5 class="blue">"Personally Identifiable Information"</h5>
+                                <p>refers to any information that identifies or can be used to identify, contact, or locate the person to whom such information pertains, including, but not limited to, name, address, phone number, fax number, email address, financial profiles, social security number, and credit card information. Personally, Identifiable Information does not include information that is collected anonymously (that is, without identification of the individual user)</p>
+                                <p>or demographic information not connected to an identified individual.</p>
+                                <h5 class="blue">What is Personally Identifiable Information collected? </h5>
+                                <p>We may collect basic user profile information from all of our Visitors. We collect the following additional information from our Authorized Customers: the names, addresses, phone numbers and email addresses of Authorized Customers, the nature and size of the business, and the nature and size of the advertising inventory that the Authorized Customer intends to purchase or sell.</p>
+                                <h5 class="blue">What are organizations collecting the information? </h5>
+                                <p>In addition to our direct collection of information, our third party service vendors (such as credit card companies, clearinghouses and banks) who may provide such services as credit, insurance, and escrow services may collect this information from our Visitors and Authorized Customers. We do not control how these third parties use such information, but we do ask them to disclose how they use personal information provided to them from Visitors and Authorized Customers. Some of these third parties may be intermediaries that act solely as links in the distribution chain and do not store, retain, or use the information given to them</p>
+                                <h5 class="blue">How does the Site use Personally Identifiable Information?</h5>
+                                <p>We use Personally Identifiable Information to customize the Site, to make appropriate service offerings, and to fulfill buying and selling requests on the Site. We may email Visitors and Authorized Customers about research or purchase and selling opportunities on the Site or information related to the subject matter of the Site. We may also use Personally Identifiable Information to contact Visitors and Authorized Customers in response to specific inquiries, or to provide the requested information.</p>
+                                <h5 class="blue">With whom may the information may be shared?</h5>
+                                <p>Personally Identifiable Information about Authorized Customers may be shared with other Authorized Customers who wish to evaluate potential transactions with other Authorized Customers. We may share aggregated information about our Visitors, including the demographics of our Visitors and Authorized Customers, with our affiliated agencies and third party vendors. We also offer the opportunity to “opt out” of receiving information or being contacted by us or by any agency acting on our behalf.</p>
+                                <h5 class="blue">How is Personally Identifiable Information stored?</h5>
+                                <p>Personally Identifiable Information collected by Next57.com is securely stored and is not accessible to third parties or employees of Next57.com except for use as indicated above.</p>
+                                <h5 class="blue">What choices are available to Visitors regarding collection, use, and distribution of the information?</h5>
+                                <p>Visitors and Authorized Customers may opt out of receiving unsolicited information from or being contacted by us and/or our vendors and affiliated agencies by responding to emails as instructed, or by contacting us at admin@next57.com</p>
+                                <h5 class="blue">Are Cookies Used on the Site?</h5>
+                                <p>Cookies are used for a variety of reasons. We use Cookies to obtain information about the preferences of our Visitors and the services they select. We also use Cookies for security purposes to protect our Authorized Customers. For example, if an Authorized Customer is logged on and the site is unused for more than 10 minutes, we will automatically log the Authorized Customer off.</p>
+                                <h5 class="blue">How does Next57.com use login information? </h5>
+                                <p>Next57.com uses login information, including, but not limited to, IP addresses, ISPs, and browser types, to analyze trends, administer the Site, track a user’s movement and use, and gather broad demographic information.</p>
+                                <h5 class="blue">What partners or service providers have access to Personally Identifiable Information from Visitors and/or Authorized Customers on the Site?</h5>
+                                <p>Next57.com has entered into and will continue to enter into partnerships and other affiliations with a number of vendors.Such vendors may have access to certain Personally Identifiable Information on a need to know basis for evaluating Authorized Customers for service eligibility.Our privacy policy does not cover their collection or use of this information.</p>
+                                <p>Disclosure of Personally Identifiable Information to comply with law. We will disclose Personally Identifiable Information in order to comply with a court order or subpoena or a request from a law enforcement agency to release information. We will also disclose Personally Identifiable Information when reasonably necessary to protect the safety of our Visitors and Authorized Customers.</p>
+                                <h5 class="blue">How does the Site keep Personally Identifiable Information secure?</h5>
+                                <p>All of our employees are familiar with our security policy and practices. The Personally Identifiable Information of our Visitors and Authorized Customers is only accessible to a limited number of qualified employees who are given a password in order to gain access to the information. We audit our security systems and processes on a regular basis. Sensitive information, such as credit card numbers or social security numbers, is protected by encryption protocols, in place to protect information sent over the Internet. While we take commercially reasonable measures to maintain a secure site, electronic communications and databases are subject to errors, tampering and break-ins, and we cannot guarantee or warrant that such events will not take place and we will not be liable to Visitors or Authorized Customers for any such occurrences.</p>
+                                <h5 class="blue">How can Visitors correct any inaccuracies in Personally Identifiable Information?</h5>
+                                <p>Visitors and Authorized Customers may contact us to update Personally Identifiable Information about them or to correct any inaccuracies by emailing us at admin@next57.com</p>
+                                <h5 class="blue">Can a Visitor delete or deactivate Personally Identifiable Information collected by the Site?</h5>
+                                <p>We provide Visitors and Authorized Customers with a mechanism to delete/deactivate Personally Identifiable Information from the Site’s database by contactingadmin@next57.com. However, because of backups and records of deletions, it may be impossible to delete a Visitor’s entry without retaining some residual information. An individual who requests to have Personally Identifiable Information deactivated will have this information functionally deleted, and we will not sell, transfer, or use Personally Identifiable Information relating to that individual in any way moving forward.</p>
+                                <h5 class="blue">What happens if the Privacy Policy Changes?</h5>
+                                <p>We will let our Visitors and Authorized Customers know about changes to our privacy policy by posting such changes on the Site. However, if we are changing our privacy policy in a manner that might cause disclosure of Personally Identifiable Information that a Visitor or Authorized Customer has previously requested not be disclosed, we will contact such Visitor or Authorized Customer to allow such Visitor or Authorized Customer to prevent such disclosure.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <center>
+                            <a class=" btn demo_button" id="privacy_policy_button" style="margin:10px;background-color: #44a1c2;border-color: #44a1c2;color: #ffffff;padding:12px 58px">
+                                <span class="button_text">
+                                          I agree
+                                </span>
+                            </a>
+                        </center>
+                    </div>
+                </div>
+            </div>
+        </div>
         <script src="js/jquery.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
+         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.3/js/bootstrapValidator.min.js"> </script>
         <script src="js/functionality.js"></script>
         <script>
         $(document).ready(function () {
@@ -586,6 +647,86 @@
         $("#booking_proceed").on('click',function(){
          $('#booking').modal('hide');
         });
+
+
+          function ValidateNo() {
+        var phoneNo = document.getElementById('phone_number');
+
+    if (phoneNo.value == "" || phoneNo.value == null) {
+            alert("not 10 digit");
+            return false;
+        }
+        if (phoneNo.value.length < 10 || phoneNo.value.length > 10) {
+            alert("Mobile No. is not valid, Please Enter 10 Digit Mobile No.");
+            return false;
+        }
+          }
+
+          
+
+$(document).ready(function() {
+    $('.registerForm').bootstrapValidator({
+        message: 'This value is not valid',
+        feedbackIcons: {
+            valid: 'glyphicon glyphicon-ok',
+            invalid: 'glyphicon glyphicon-remove',
+            validating: 'glyphicon glyphicon-refresh'
+        },
+        fields: {
+            username: {
+                message: 'The username is not valid',
+                validators: {
+                    notEmpty: {
+                        message: 'The username is required and cannot be empty'
+                    },
+                    stringLength: {
+                        min: 6,
+                        max: 30,
+                        message: 'The username must be more than 6 and less than 30 characters long'
+                    },
+                    regexp: {
+                        regexp: /^[a-zA-Z0-9_]+$/,
+                        message: 'The username can only consist of alphabetical, number and underscore'
+                    }
+                }
+            },
+            email: {
+                validators: {
+                    notEmpty: {
+                        message: 'The email is required and cannot be empty'
+                    },
+                    emailAddress: {
+                        message: 'The input is not a valid email address'
+                    }
+                }
+            },
+            phone: {
+                validators: {
+                    notEmpty: {
+                        message: 'Please supply your phone number'
+                    },
+                    phone: {
+                        country: 'US',
+                        message: 'Please supply a vaild phone number with area code'
+                    }
+                }
+            },
+        }
+    });
+});
+
+$(document).ready(function() {
+     
+        var data = {
+          name: $("#input_name").val(),
+          email: $("#input_email").val(),
+          phone: $("#input_phone").val()
+        }
+   $("#req_button").click(function(){
+       console.log(data)
+   })
+});
+
        </script>
     </body>
 </html>
