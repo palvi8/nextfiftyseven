@@ -1,24 +1,24 @@
 
         $(document).ready(function(){
         $(".location_container").mouseenter(function(){
-         $('.centered').css({"top":"7%","transition":"0.5s"});  
+         $('.centered').css({"top":"10%","transition":"0.6s"});  
         });
         $(".location_container").mouseleave(function(){
-        $('.centered').css({"top":"90%","transition":"0.5s"});
+        $('.centered').css({"top":"90%","transition":"0.6s"});
      
         });
         $(".location_container1").mouseenter(function(){
-         $('.centered1').css({"top":"7%","transition":"0.5s"});  
+         $('.centered1').css({"top":"10%","transition":"0.6s"});  
         });
         $(".location_container1").mouseleave(function(){
-        $('.centered1').css({"top":"90%","transition":"0.5s"});
+        $('.centered1').css({"top":"90%","transition":"0.6s"});
      
         });
         $(".location_container2").mouseenter(function(){
-         $('.centered2').css({"top":"7%","transition":"0.5s"});  
+         $('.centered2').css({"top":"10%","transition":"0.6s"});  
         });
         $(".location_container2").mouseleave(function(){
-        $('.centered2').css({"top":"90%","transition":"0.5s"});
+        $('.centered2').css({"top":"90%","transition":"0.6s"});
         });
         });
 

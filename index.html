@@ -6,11 +6,13 @@
             <link rel="stylesheet" href="css/bootstrap.min.css">
             <link rel="stylesheet" href="css/style.css">
              <link rel="stylesheet" href="css/feature.css">
+             <link rel="stylesheet" href="css/intlTelInput.css">
+             <link rel="stylesheet" href="css/demo.css">
             <link href="fonts/css/font-awesome.min.css" rel="stylesheet">
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.3/css/bootstrapValidator.css"/>
             
     </head>
-    <body data-spy="scroll" data-target="navbar" data-offset="100">
+    <body data-spy="scroll" data-target="navbar" data-offset="100" onload="form1.reset();">
         <nav class="navbar navbar-fixed-top navbar_fixed menu-shrink">
             <div class="container">
                 <div class="navbar-header">
@@ -23,9 +25,9 @@
                 </div>
                 <div class="collapse navbar-collapse" id="myNavbar">
                     <ul class="nav navbar-nav navbar-right" style="margin-top:7px">
-                        <li class=""><a href="#" class="nav_item">Home</a></li>
-                        <li><a href="#about" class="nav_item" href="#">About </a></li>
-                        <li><a href="#plans" class="nav_item" href="#">Plans</a></li>
+                        <li><a href="#" class="nav_item">Home</a></li>
+                        <li><a href="#about" class="nav_item" >About </a></li>
+                        <li><a href="#plans" class="nav_item" >Plans</a></li>
                         <li><a href="#location" class="nav_item" href="#">Location</a></li>
                         <li><a class="nav_item" href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
                         <li><a class="nav_item" href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
@@ -51,8 +53,7 @@
                                     <span class="button_text">
                                        Book now
                                     </span>
-                                </a>
-                                
+                                </a>      
                             </div>
                         </div>
                     </center>
@@ -60,7 +61,7 @@
            </div>
         </section>
 
-        <section class="about" id="about">
+        <section class="about" id="about" >
             <div class="container">
                 <div class="row">
                     <div class="col-md-3 sm-12 sx-12 "></div>
@@ -119,10 +120,13 @@
                     <div class="col-md-4 col-sm-4 col-col-xs-12 location">
                         <center>
                             <div class="location_container">
-                                 <img class="image" src="images/new_location.jpg">
-                                <div class="centered">location</div>
-                                <div class="middle">
-                                    <a class="btn text" data-toggle="modal" data-target="#request_for_booking">
+                               <div class="content">
+                                <div class="content-overlay"></div>
+                                <center><img class="content-image" src="images/new_location.jpg" class="img-responsive"></center>
+                                 <div class="centered">Location</div>
+                                <div class="content-details fadeIn-bottom" style="top:60%">
+                                    <div class="middle">
+                                     <a class="btn text" data-toggle="modal" data-target="#request_for_booking">
                                         <span class="visit">
                                               Request a visit
                                         </span>
@@ -137,17 +141,22 @@
                                               book your space
                                         </span>
                                     </a>
-                                </div>
+                                  </div>  
+                            </div>
+                        </div>
                             </div>
                         </center>
                     </div>
                     <div class="col-md-4 col-sm-4 col-col-xs-12 location">
                         <center>
                             <div class="location_container1">
-                                 <img class="image" src="images/new_location.jpg">
-                                <div class="centered1">location</div>
-                                <div class="middle">
-                                    <a class="btn text" data-toggle="modal" data-target="#request_for_booking">
+                              <div class="content">
+                                <div class="content-overlay"></div>
+                                <center><img class="content-image" src="images/new_location.jpg" class="img-responsive"></center>
+                                 <div class="centered1">Location</div>
+                                <div class="content-details fadeIn-bottom" style="top:60%">
+                                    <div class="middle">
+                                     <a class="btn text" data-toggle="modal" data-target="#request_for_booking">
                                         <span class="visit">
                                               Request a visit
                                         </span>
@@ -162,17 +171,22 @@
                                               book your space
                                         </span>
                                     </a>
-                                </div>
+                                  </div>  
+                            </div>
+                        </div>
                             </div>
                         </center>
                     </div>
                     <div class="col-md-4 col-sm-4 col-col-xs-12 location">
                         <center>
                             <div class="location_container2">
-                                <img class="image" src="images/new_location.jpg">
-                                <div class="centered2">location</div>
-                                <div class="middle">
-                                    <a class="btn text" data-toggle="modal" data-target="#request_for_booking">
+                              <div class="content">
+                                <div class="content-overlay"></div>
+                                <center><img class="content-image" src="images/new_location.jpg" class="img-responsive"></center>
+                                 <div class="centered2">Location</div>
+                                <div class="content-details fadeIn-bottom" style="top:60%">
+                                    <div class="middle">
+                                     <a class="btn text" data-toggle="modal" data-target="#request_for_booking">
                                         <span class="visit">
                                               Request a visit
                                         </span>
@@ -187,7 +201,9 @@
                                               book your space
                                         </span>
                                     </a>
-                                </div>
+                                  </div>  
+                            </div>
+                        </div>
                             </div>
                         </center>
                     </div>
@@ -429,13 +445,13 @@
                                    </a>
                        </div>
                         </div>
-                   <div class="col-md-3">
+                   <div class="col-md-2">
                        <div class="footer-content">
                            <h4>Heading</h4>
                            <ul class="account_list">
-                               <li><i class="fa fa-angle-double-right"></i> <a>About Us</a></li>
-                                <li><i class="fa fa-angle-double-right"></i> <a>Locations</a></li>
-                                <li><i class="fa fa-angle-double-right"></i> <a>Spaces</a></li>
+                               <li><i class="fa fa-angle-double-right"></i> <a href="#about">About Us</a></li>
+                                <li><i class="fa fa-angle-double-right"></i> <a href="#location">Locations</a></li>
+                                <li><i class="fa fa-angle-double-right"></i> <a href="#plans">Spaces</a></li>
                                 <li><i class="fa fa-angle-double-right"></i> <a data-toggle="modal" data-target="#terms_policy">Privacy Policy</a></li>
                            </ul>
                        </div>
@@ -481,16 +497,16 @@
                             <p>Share your details below</p>
                             <p>We promise to get back to you soon</p>
                         </div>
-                        <form class="registerForm">
+                        <form id="form1" class="registerForm">
                             <div class="form-group">
                                 <input type="text" id ="input_name" class="form-control" placeholder="Name" name="username">
                             </div>
                             <div class="form-group">
                                 <input type="text" id="input_email" class="form-control" placeholder="Email" name="email">
                             </div>
-                            <div class="form-group" style="display: inline-table">
-                                <span class="input-group-addon">+91</span>
-                                <input type="text" id="input_phone" class="form-control" id="request_phone_number" placeholder="Mobile"  maxlength="10" name="phone">
+                            <div class="form-group">
+                              <input id="input_phone_book" type="text" class="form-control phone_input" name="phone" minlength ="4" maxlength="10">
+                             <!-- <input type="text" id="input_phone" class="form-control" id="request_phone_number" placeholder="Mobile" maxlength="10" name="phone">-->
                             </div>
                         </form>
                     </div>
@@ -513,16 +529,16 @@
                         <div style="text-align:center; margin-bottom:24px; margin-top:16px">
                             <p>Let's book a perfect space for you</p>
                         </div>
-                        <form>
+                       <form  class="registerForm">
                             <div class="form-group">
-                                <input type="text" class="form-control" id="recipient-name" placeholder="Name">
+                                <input type="text" id ="input_name" class="form-control" placeholder="Name" name="username">
                             </div>
                             <div class="form-group">
-                                <input type="text" class="form-control" id="recipient-name" placeholder="Email">
+                                <input type="text" id="input_email" class="form-control" placeholder="Email" name="email">
                             </div>
-                            <div class="form-group" style="display: inline-table">
-                                <span class="input-group-addon">+91</span>
-                                <input type="text" class="form-control" id="phone_number" placeholder="Mobile" maxlength="10">
+                            <div class="form-group">
+                              <input id="input_phone" type="text" class="form-control phone_input" name="phone" minlength ="4" maxlength="10">
+                             <!-- <input type="text" id="input_phone" class="form-control" id="request_phone_number" placeholder="Mobile" maxlength="10" name="phone">-->
                             </div>
                         </form>
                     </div>
@@ -639,6 +655,7 @@
         <script src="js/bootstrap.min.js"></script>
          <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.3/js/bootstrapValidator.min.js"> </script>
         <script src="js/functionality.js"></script>
+        <script src="js/intlTelInput.min.js"></script>
         <script>
         $(document).ready(function () {
           $(".navbar_fixed").css({"background-color":"rgba(0,0,0,0.7)","transition":"all 0.6s ease","box-shadow":"0px 0px 0px rgba(50,50,50,0.4)","color":"white"});
@@ -650,7 +667,7 @@
 
 
           function ValidateNo() {
-        var phoneNo = document.getElementById('phone_number');
+        var phoneNo = document.getElementById('phone');
 
     if (phoneNo.value == "" || phoneNo.value == null) {
             alert("not 10 digit");
@@ -716,7 +733,7 @@ $(document).ready(function() {
 });
 
 $(document).ready(function() {
-     
+    window.localStorage.clear();
         var data = {
           name: $("#input_name").val(),
           email: $("#input_email").val(),
@@ -726,7 +743,44 @@ $(document).ready(function() {
        console.log(data)
    })
 });
+function scrollNav() {
+  $('.nav a').click(function(){  
+    //Animate
+    $('html, body').stop().animate({
+        scrollTop: $( $(this).attr('href') ).offset().top - 50
+    }, 600);
+    return false;
+  });
+  $('.scrollTop a').scrollTop();
+}
+scrollNav();
 
-       </script>
+</script>
+ <script>
+    $("#input_phone , #input_phone_book").intlTelInput({
+      // allowDropdown: false,
+      // autoHideDialCode: false,
+      // autoPlaceholder: "off",
+      // dropdownContainer: "body",
+      // excludeCountries: ["us"],
+      // formatOnDisplay: false,
+      // geoIpLookup: function(callback) {
+      //   $.get("http://ipinfo.io", function() {}, "jsonp").always(function(resp) {
+      //     var countryCode = (resp && resp.country) ? resp.country : "";
+      //     callback(countryCode);
+      //   });
+      // },
+      // hiddenInput: "full_number",
+      // initialCountry: "auto",
+      // nationalMode: false,
+      // onlyCountries: ['us', 'gb', 'ch', 'ca', 'do'],
+      // placeholderNumberType: "MOBILE",
+      // preferredCountries: ['cn', 'jp'],
+      // separateDialCode: true,
+      utilsScript: "js/utils.js"
+    });
+   
+;
+  </script>
     </body>
 </html>
