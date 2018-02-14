@@ -1,3 +1,34 @@
+$(document).ready(function () {
+          $(".navbar_fixed").css({"background-color":"rgba(0,0,0,0.7)","transition":"all 0.6s ease","box-shadow":"0px 0px 0px rgba(50,50,50,0.4)","color":"white"});
+          $(".nav_item").css("color","white");
+        });
+        $("#booking_proceed").on('click',function(){
+         $('#booking').modal('hide');
+        });
+        
+function scrollNav() {
+  $('.nav a').click(function(){  
+    //Animate
+    $('html, body').stop().animate({
+        scrollTop: $( $(this).attr('href') ).offset().top - 50
+    }, 1000);
+    return false;
+  });
+  $('.scrollTop a').scrollTop();
+}
+scrollNav();
+
+function scrollFooter() {
+  $('.account_list a').click(function(){  
+    //Animate
+    $('html, body').stop().animate({
+        scrollTop: $( $(this).attr('href') ).offset().top - 50
+    }, 1000);
+    return false;
+  });
+  $('.scrollFooter a').scrollTop();
+}
+scrollFooter();
 
         $(document).ready(function(){
         $(".location_container").mouseenter(function(){
@@ -168,17 +199,71 @@ function myFunction(){
             console.log("new page");
         }
 }
- 
-$(function(){
-    $('a[title]').tooltip();
-    
-    // Tab Pane continue moving
-    var tabCarousel = setInterval(function() {
-	    var tabs = $('.nav-tabs > li'),
-	        active = tabs.filter('.active'),
-	        next = active.next('li'),
-	        toClick = next.length ? next.find('a') : tabs.eq(0).find('a');
+     window.onscroll = function () {
+      scrollFunction()
+    };
 
-	    toClick.trigger('click');
-    }, 3000);
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+      } else {
+        document.getElementById("myBtn").style.display = "none";
+      }
+    }
+    
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+    $(document).ready(function() {
+    $('.registerForm').bootstrapValidator({
+        message: 'This value is not valid',
+        feedbackIcons: {
+            valid: 'glyphicon glyphicon-ok',
+            invalid: 'glyphicon glyphicon-remove',
+            validating: 'glyphicon glyphicon-refresh'
+        },
+        fields: {
+            username: {
+                message: 'The username is not valid',
+                validators: {
+                    notEmpty: {
+                        message: 'The username is required and cannot be empty'
+                    },
+                    stringLength: {
+                        min: 6,
+                        max: 30,
+                        message: 'The username must be more than 6 and less than 30 characters long'
+                    },
+                    regexp: {
+                        regexp: /^[a-zA-Z0-9_]+$/,
+                        message: 'The username can only consist of alphabetical, number and underscore'
+                    }
+                }
+            },
+            email: {
+                validators: {
+                    notEmpty: {
+                        message: 'The email is required and cannot be empty'
+                    },
+                    emailAddress: {
+                        message: 'The input is not a valid email address'
+                    }
+                }
+            },
+            phone: {
+                validators: {
+                    notEmpty: {
+                        message: 'Please supply your phone number'
+                    },
+                    phone: {
+                        country: 'US',
+                        message: 'Please supply a vaild phone number with area code'
+                    }
+                }
+            },
+        }
+    });
 });
+ 
+
